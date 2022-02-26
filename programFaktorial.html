@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faktorial</title>
+    <script type="text/javascript">
+        function faktorial(angka)
+        {
+            var angka = parseInt(prompt('Masukkan Angka: '));
+            var faktor = 1;
+            for (var i = 1; i<=angka; i++) {
+                faktor *= i;
+            }
+            hasil = alert(`Hasil faktorial dari angka ${angka} yaitu ${faktor}`);
+            tanya = confirm('Apakah anda ingin menghitung angka yang lain?');
+                while (tanya == true){
+                    faktorial(angka);
+                    alert ('Terima kasih sudah berkunjung');
+                    return false;
+                }
+        }
+        faktorial();
+
+    </script>
+</head>
+<body>
+</body>
+</html>
