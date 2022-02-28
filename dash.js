@@ -8,7 +8,7 @@ function dash(angka){
     result = [string[0]];
     for (i=1; i<string.length; i++){
         //jika index ke i - 1 % 2 = 0 dan index i%2 = 0
-        if (string[i]%2 == 0  && string[i -1]%2 == 0){
+        if (string[i -1]%2 == 0 && string[i]%2 == 0){
             //sisipkan dash(-)
             result.push('-', string[i]);
         } else{
